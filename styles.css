@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #eef2f3;
+    font-family: Arial, sans-serif;
+  }
+  .chance-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .chance-container input {
+    padding: 5px;
+    font-size: 16px;
+    width: 120px;
+  }
+  .chance-container button {
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .wheel-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  .wheel {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(
+      #a0c4ff 0deg 36deg,
+      #ffc6ff 36deg 72deg,
+      #ffc6ff 72deg 108deg,
+      #ffc6ff 108deg 144deg,
+      #ffc6ff 144deg 180deg,
+      #ffc6ff 180deg 216deg,
+      #ffc6ff 216deg 252deg,
+      #ffc6ff 252deg 288deg,
+      #ffc6ff 288deg 324deg,
+      #ffc6ff 324deg 360deg
+    );
+    transition: transform 2s cubic-bezier(0.33, 1, 0.68, 1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  .segment-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    pointer-events: none;
+  }
+  .segment-label[data-angle] {
+    transform: rotate(calc(var(--angle) * 1deg)) translateY(-120px) rotate(calc(-1 * var(--angle) * 1deg));
+  }
+  .arrow {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #e63946;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+  }
+  .spin-btn {
+    margin-top: 30px;
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color
+  ::contentReference[oaicite:3]{index=3}
+   
+  
